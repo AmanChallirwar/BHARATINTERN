@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputTemperature"
+        android:layout_width="375dp"
+        android:layout_height="84dp"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/temperatureRadioGroup"
+        android:layout_width="373dp"
+        android:layout_height="108dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fahrenheitToCelsiusRadioButton"
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Fahrenheit to Celsius"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/celsiusToFahrenheitRadioButton"
+            android:layout_width="172dp"
+            android:layout_height="108dp"
+            android:text="Celsius to Fahrenheit"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="377dp"
+        android:layout_height="87dp"
+        android:text="Convert"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/outputTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="381dp"
+        android:layout_height="184dp"
+        app:srcCompat="@drawable/img" />
+
+</LinearLayout>
